@@ -13,7 +13,7 @@ context "Filling in the Form" do
     fill_in("ship_name_2", :with => "Black Pearl")
     fill_in("ship_type_2", :with => "merchant vessel")
     fill_in("ship_booty_2", :with => "treasure map")
-    click_button('Submit')
+    click_button("Submit")
     expect(page).to have_content("Captain Jack Sparrow")
     expect(page).to have_content("190 lbs")
     expect(page).to have_content("5 feet 11 inches")
